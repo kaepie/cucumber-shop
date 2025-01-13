@@ -15,6 +15,10 @@ public class Product {
         stock -= quantity;
     }
 
+    public boolean isStockAvailable(int quantity) {
+        return stock >= quantity;
+    }
+
     public String getName() {
         return name;
     }
